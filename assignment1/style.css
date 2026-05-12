@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: #e0e0e0; 
+    padding: 10px;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+#left{
+    height: 100%;
+    padding: 10px 60px;
+    width: 60%;
+    background: rgb(250, 221, 0);
+}
+#right{
+    height: 100%;
+    width: 40%;
+    background: beige;
+}
+#left img{
+    height: 60px;
+    
+}
+
+#left h1{
+    font-size: 80px;
+    font-weight: 900;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#left h3{
+    margin-top: 80px;
+}
+#left p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 200;
+    margin-top: 5px;
+}
+#left h4{
+    margin-top: 40px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+#right img{
+    height: 50px;
+    position: absolute;
+    top: 4%;
+    left: 94%;
+}
+#right img:hover{
+    background: #f0c508;
+    height: 50px;
+    position: absolute;
+    top: 4%;
+    left: 94%;
+}
+#ssj {
+    height: 500px;
+    position: absolute;
+    top: 20%;
+    left: 45%;
+}
+#left #pokeball{
+    height: 500px;
+    position: absolute;
+    top: 64%;
+    overflow: hidden;
+    opacity: 20%;
+}
+#right #dots{
+    position: absolute;
+    top: 30%;
+    height: 200px;
+}
