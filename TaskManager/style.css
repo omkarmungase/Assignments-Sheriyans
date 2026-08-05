@@ -65,7 +65,7 @@ main{
     width: 100%;
 
 }
-.dashboard :hover{
+.dashboard:hover{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -87,6 +87,7 @@ main{
 .right{
     gap: 20px;
     display: flex;
+    flex-wrap: wrap;
     /* flex-direction: col; */
     height: 100%;
     width: 85%;
@@ -192,6 +193,77 @@ button{
     background-color: rgba(228, 51, 51, 0.297);
 }
 
+.taskbar{
+    height: 50%;
+    width:90%;
+    background-color: #fff;
+    box-shadow:  0 1px 2px rgba(0, 0, 0, 0.05),
+    0 4px 12px rgba(0, 0, 0, 0.08);
+    margin-top: 0;
+    padding: 20px;
+    border-radius: 20px;
+}
+.tasks{
+    height: 30%;
+    width: 100%;
+    box-shadow:  0 1px 2px rgba(0, 0, 0, 0.05),
+    0 4px 12px rgba(0, 0, 0, 0.08);
+    /* background-color:black ; */
+    /* border: 2px solid gray; */
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.tasks button{
+    /* background-color: white; */
+    padding: 10px;
+    width: 110px;
+    height: 50%;
+    display: flex;
+    /* text-align: center; */
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    color: black;
+    border: 1px solid gray;
+    background-color: #fff;
+    font-size: 13px;
+
+}
+.tasks button i {
+    color: #000;
+    font-size: 22px;
+}
+.logo{
+    height: 100%;
+    width: 50px;
+    padding: 50px;
+    /* text-align: center; */
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.buttons{
+    padding-right: 30px;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    /* justify-content: ; */
+    gap: 20px;
+}
+.taskdet h3{
+    font-weight: 600;
+}
+.taskdet{
+    /* background-color: #0; */
+    width: 30%;
+    font-size: 18px;
+    font-weight: 100;
+}
+
 
 
 
@@ -204,5 +276,15 @@ button{
   /* Styles apply to screens 768px wide or smaller */
   .left { display: none; }
   .right{ width: 100% ;}
-  .status{width: 300px ;}
+  .addtask{
+    width: 30xpx;
+  }
+  .taskbar{
+    width: 1000px;
+  }
+  /* .tasks{ 
+    flex-direction: column;
+    height: 50%; */
+  
+  .status{width: 300px !important ;}
 }
