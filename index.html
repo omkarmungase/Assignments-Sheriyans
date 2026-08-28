@@ -1,71 +1,597 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Assignments - Sheryians</title>
+    <meta charset="UTF-8">
 
-  <style>
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-      font-family: Arial, Helvetica, sans-serif;
-    }
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    body{
-      background:#0f0f0f;
-      color:white;
-      min-height:100vh;
-      display:flex;
-      justify-content:center;
-      align-items:center;
-    }
-
-    .container{
-      text-align:center;
-    }
-
-    h1{
-      font-size:3rem;
-      margin-bottom:30px;
-    }
-
-    .links{
-      display:flex;
-      flex-direction:column;
-      gap:15px;
-    }
-
-    a{
-      text-decoration:none;
-      color:white;
-      border:1px solid #444;
-      padding:15px 30px;
-      border-radius:10px;
-      transition:0.3s;
-      background:#1a1a1a;
-    }
-
-    a:hover{
-      background:white;
-      color:black;
-      transform:translateY(-3px);
-    }
-  </style>
+    <title>Assignments UI</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <div class="container">
-    <h1>Assignments</h1>
+    <!-- =========================================
+         MACOS DESKTOP
+    ========================================== -->
 
-    <div class="links">
-      <a href="./assignment1/">Assignment 1</a>
-      <a href="https://omkarmungase.github.io/Practice/practice%201/">Assignment 2</a>
-      <a href="https://omkarmungase.github.io/Practice/practice%202/">Assignment 3</a>
-      <a href="./assignment4/">Assignment 4</a>
-      <a href="./assignment5/">Assignment 5</a>
-      <a href="./TaskManager/"> Task Manager</a>
+    <div class="desktop">
+
+
+        <!-- =====================================
+             TOP MENU BAR
+        ====================================== -->
+
+        <div class="menu-bar">
+
+            <!-- Left side -->
+            <div class="menu-left">
+
+                <span class="apple-logo"><i class="ri-apple-fill"></i></span>
+
+                <span>Finder</span>
+                <span>File</span>
+                <span>Edit</span>
+                <span>View</span>
+                <span>Go</span>
+                <span>Window</span>
+                <span>Help</span>
+
+            </div>
+
+
+            <!-- Right side -->
+            <div class="menu-right">
+
+                <span>Wi-Fi</span>
+                <span>🔊</span>
+                <span>🔋</span>
+                <span id="menu-time">12:00</span>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =====================================
+             DESKTOP ICONS
+        ====================================== -->
+
+        <div class="desktop-icons">
+
+
+            <!-- Files -->
+            <div class="desktop-icon" id="files-icon">
+
+                <a href="https://omkarmungase.github.io/Practice/practice%201/">
+                  <div class="icon-image" >
+                    📁
+                </div></a>
+
+                <div class="icon-name">
+                    Assignment 1
+                </div>
+
+            </div>
+            <div class="desktop-icon" id="files-icon">
+
+                <a href="./assignment1/">
+                  <div class="icon-image" >
+                    📁
+                </div></a>
+
+                <div class="icon-name">
+                    Assignment 2
+                </div>
+
+            </div>
+            <div class="desktop-icon" id="files-icon">
+
+                <a href="https://omkarmungase.github.io/Practice/practice%202/">
+                  <div class="icon-image" >
+                    📁
+                </div></a>
+
+                <div class="icon-name">
+                    Assignment 3
+                </div>
+
+            </div>
+            <div class="desktop-icon" id="files-icon">
+
+                <a href="./assignment4/">
+                  <div class="icon-image" >
+                    📁
+                </div></a>
+
+                <div class="icon-name">
+                    assignment 4
+                </div>
+
+            </div>
+            <div class="desktop-icon" id="files-icon">
+
+                <a href="./assignment5/">
+                  <div class="icon-image" >
+                    📁
+                </div></a>
+
+                <div class="icon-name">
+                    Assignment 5
+                </div>
+
+            </div>
+            <div class="desktop-icon" id="files-icon">
+
+                <a href="./assignment6/">
+                  <div class="icon-image" >
+                    📁
+                </div></a>
+
+                <div class="icon-name">
+                    assignment 6
+                </div>
+
+            </div>
+
+
+            <!-- Projects -->
+            <div class="desktop-icon" id="projects-icon">
+
+                <div class="icon-image">
+                    📂
+                </div>
+
+                <div class="icon-name">
+                    Projects
+                </div>
+
+            </div>
+
+
+            <!-- Browser -->
+            <div class="desktop-icon" id="browser-icon">
+
+                <div class="icon-image">
+                    🌐
+                </div>
+
+                <div class="icon-name">
+                    Browser
+                </div>
+
+            </div>
+
+
+            <!-- Documents -->
+            <div class="desktop-icon" id="documents-icon">
+
+                <div class="icon-image">
+                    📄
+                </div>
+
+                <div class="icon-name">
+                    Documents
+                </div>
+
+            </div>
+
+
+            <!-- Trash -->
+            <div class="desktop-icon" id="trash-icon">
+
+                <div class="icon-image">
+                    🗑️
+                </div>
+
+                <div class="icon-name">
+                    Trash
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- =====================================
+             WINDOWS AREA
+        ====================================== -->
+
+        <div class="windows-area">
+
+
+            <!-- =================================
+                 FINDER WINDOW
+            ================================== -->
+
+            <div class="window finder-window" id="finder-window">
+
+
+                <!-- Window title bar -->
+
+                <div class="window-header">
+
+                    <!-- Window controls -->
+
+                    <div class="window-controls">
+
+                        <button class="close-btn">
+                            <i class="ri-close-line"></i>
+                        </button>
+
+                        <button class="minimize-btn">
+                            −
+                        </button>
+
+                        <button class="maximize-btn">
+                            +
+                        </button>
+
+                    </div>
+
+
+                    <!-- Window title -->
+
+                    <div class="window-title">
+                        Finder
+                    </div>
+
+                </div>
+
+
+
+                <!-- =============================
+                     FINDER CONTENT
+                ============================== -->
+
+                <div class="finder-content">
+
+
+                    <!-- Sidebar -->
+
+                    <div class="finder-sidebar">
+
+                        <h3>Favorites</h3>
+
+                        <div class="sidebar-item">
+                            🏠 Home
+                        </div>
+
+                        <div class="sidebar-item">
+                            📁 Desktop
+                        </div>
+
+                        <div class="sidebar-item">
+                            📄 Documents
+                        </div>
+
+                        <div class="sidebar-item">
+                            ⬇️ Downloads
+                        </div>
+
+                        <div class="sidebar-item">
+                            🖼️ Pictures
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- Main file area -->
+
+                    <div class="finder-main">
+
+
+                        <!-- Folder -->
+
+                        <div class="file-item folder-item" data-type="folder" data-name="Projects">
+
+                            <div class="file-icon">
+                                📁
+                            </div>
+
+                            <div class="file-name">
+                                Projects
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- File -->
+
+                        <div class="file-item" data-type="file" data-name="README.txt">
+
+                            <div class="file-icon">
+                                📄
+                            </div>
+
+                            <div class="file-name">
+                                README.txt
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- HTML file -->
+
+                        <div class="file-item" data-type="file" data-name="website.html">
+
+                            <div class="file-icon">
+                                🌐
+                            </div>
+
+                            <div class="file-name">
+                                website.html
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- Image -->
+
+                        <div class="file-item" data-type="file" data-name="wallpaper.jpg">
+
+                            <div class="file-icon">
+                                🖼️
+                            </div>
+
+                            <div class="file-name">
+                                wallpaper.jpg
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Finder footer -->
+
+                <div class="window-footer">
+
+                    <span>
+                        4 items
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================
+                 PROJECTS WINDOW
+            ================================== -->
+
+            <div class="window projects-window" id="projects-window">
+
+
+                <div class="window-header">
+
+                    <div class="window-controls">
+
+                        <button class="close-btn">
+                            ×
+                        </button>
+
+                        <button class="minimize-btn">
+                            −
+                        </button>
+
+                        <button class="maximize-btn">
+                            +
+                        </button>
+
+                    </div>
+
+                    <div class="window-title">
+                        Projects
+                    </div>
+
+                </div>
+
+
+                <div class="window-body">
+
+                    <h2>Projects</h2>
+
+                    <p>
+                        projects are on dextop idiot!!
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================
+                 BROWSER WINDOW
+            ================================== -->
+
+            <div class="window browser-window" id="browser-window">
+
+
+                <div class="window-header">
+
+                    <div class="window-controls">
+
+                        <button class="close-btn">
+                            ×
+                        </button>
+
+                        <button class="minimize-btn">
+                            −
+                        </button>
+
+                        <button class="maximize-btn">
+                            +
+                        </button>
+
+                    </div>
+
+                    <div class="window-title">
+                        Browser
+                    </div>
+
+                </div>
+
+
+                <div class="browser-content">
+
+                    <div class="browser-address-bar">
+
+                        <input type="text" value="https:// hell bro i can trace you now!!" readonly>
+
+                    </div>
+
+
+                    <div class="browser-page">
+
+                        <h1>Brave</h1>
+
+                        <p>
+                            This is in generation phase you can go to goolgle
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+
+        <!-- =====================================
+             DOCK
+        ====================================== -->
+
+        <div class="dock">
+
+
+            <!-- Finder -->
+
+            <div class="dock-item" data-app="finder">
+
+                <div class="dock-icon">
+                    📁
+                </div>
+
+                <span>
+                    Finder
+                </span>
+
+            </div>
+
+
+
+            <!-- Browser -->
+
+            <div class="dock-item" data-app="browser">
+
+                <div class="dock-icon">
+                    🌐
+                </div>
+
+                <span>
+                    Browser
+                </span>
+
+            </div>
+
+
+
+            <!-- Projects -->
+
+            <div class="dock-item" data-app="projects">
+
+                <div class="dock-icon">
+                    💻
+                </div>
+
+                <span>
+                    Projects
+                </span>
+
+            </div>
+
+
+
+            <!-- Terminal -->
+
+            <div class="dock-item" data-app="terminal">
+
+                <div class="dock-icon">
+                    ⌨️
+                </div>
+
+                <span>
+                    Terminal
+                </span>
+
+            </div>
+
+
+
+            <!-- Settings -->
+
+            <div class="dock-item" data-app="settings">
+
+                <div class="dock-icon">
+                    ⚙️
+                </div>
+
+                <span>
+                    Settings
+                </span>
+
+            </div>
+
+
+
+            <!-- Trash -->
+
+            <div class="dock-item" data-app="trash">
+
+                <div class="dock-icon">
+                    🗑️
+                </div>
+
+                <span>
+                    Trash
+                </span>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- JavaScript will be added in Step 3 -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>ask Manager</a>
       
       
     </div>
