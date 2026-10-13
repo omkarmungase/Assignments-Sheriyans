@@ -133,16 +133,20 @@ body {
     position: absolute;
 
     top: 55px;
+    left: 25px;
     right: 25px;
 
-    width: 100px;
+    height: calc(100vh - 150px);
 
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 85px);
 
-    align-items: center;
+    align-content: start;
+    justify-content: end;
 
     gap: 22px;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 
@@ -837,6 +841,8 @@ body {
     }
 
     .desktop-icons {
+        display: grid;
+        left: 10px;
         right: 10px;
     }
 
